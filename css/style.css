@@ -1,0 +1,430 @@
+/* Importações */
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+/* 
+font-family: 'Castoro', serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* Reset css */
+* {
+  padding: 0px;margin: 0px;box-sizing: border-box;
+}
+
+/* Pseudo raiz do documento HTML */
+:root {
+  --font-princ-family: Roboto;
+  --font-title-family: Castoro;
+  --background-button: #e94d61;
+}
+
+/* Elemento corpo do site */
+body {
+  background-color: #f5f0ed;
+  font-family: var(--font-princ-family);
+  overflow-x: hidden;
+}
+
+/* Saiba-mais */
+.its-here {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  padding-left: 110px;
+  color: rgb(136, 135, 135);
+  border-top: 4px solid hsl(179deg 75% 38%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.068);
+}
+.its-here a {
+  text-decoration: none;
+  color: hsl(179deg 75% 38%);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* header do site */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 100px;
+  padding: 10px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.048);
+}
+
+/* logo do header */
+.logo,
+.logo a,
+.logo a p {
+  position: relative;
+  left: 3px;
+  font-family: 'Castoro';
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #342f36;
+}
+
+/* menu do header*/
+.menu,
+.menu nav,
+.menu ul,
+.menu li,
+.menu a{
+  display: flex;
+  gap: 50px;
+  font-weight: 500;
+  list-style: none;
+  color: rgb(141, 138, 138);
+  text-decoration: none;
+}
+
+/* login e buttao header */
+.login-button {
+  display: flex;
+  gap: 30px;
+}
+/* login do header */
+.login {
+  display: flex;
+}
+.login img {
+  width: 25px;
+}
+.login p,.login a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: rgb(70, 68, 68);
+  text-decoration: none;
+}
+/* button (get your invite) do header */
+.login-button button {
+  padding: 10px 25px;
+  background-color: var(--background-button);
+  color: #ece8e5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Main Conteudo do site */
+main {
+  display: flex;
+  flex-direction: column;
+  height: 2500px;
+}
+
+/* Section cap-email */
+.cap-email {
+  height: 500px;
+  position: relative;
+  top: 110px;
+  display: flex;
+  margin-left: 110px;
+}
+/* texto cap email */
+.texto-cap-email {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.texto-cap-email h1 {
+  font-family: var(--font-title-family);
+  font-size: 30pt;
+  color:rgba(0, 0, 0, 0.856);
+  line-height: 50px;
+  margin-bottom: 15px;
+}
+.texto-cap-email h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgb(83, 81, 81);
+  margin-bottom: 60px;
+}
+.texto-cap-email-form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.texto-cap-email-form input[type=text]{
+  width: 300px;
+  height: 50px;
+  text-indent: 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid rgba(124, 124, 124, 0.527);
+}
+.texto-cap-email-form input[type=text]::placeholder {
+  color: rgba(124, 124, 124, 0.603);
+}
+.texto-cap-email-form input[type=submit]{
+  width: 190px;
+  height: 50px;
+  background-color: var(--background-button);
+  color: #ece8e5;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.texto-cap-email p {
+  font-size: 14px;
+  color: rgb(66, 65, 65);
+}
+.texto-cap-email p a {
+  text-decoration: none;
+  color: hsl(179deg 75% 38%);
+}
+/* cap-email imagem */
+.cap-email-image img{
+  position: relative;
+  bottom: 70px;
+  width: 600px;
+}
+
+/* div more sales */
+.more-sales {
+  position: relative;
+  top: 130px;
+  width: 1130px;
+  height: 270px;
+  padding: 70px;
+  align-self: center;
+  text-align: center;
+  background-color: #fcfafb;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.158);
+}
+.more-sales h2 {
+  color: #342f36;
+  font-size: 24pt;
+  margin-bottom: 20px;
+}
+.linha {
+  position: relative;
+  left: 544px;
+  bottom: 20px;
+  width: 120px;
+  height: 3px;
+  background-color: #e5b43d;
+}
+.more-sales p {
+  color: rgba(49, 47, 47, 0.61);
+  line-height: 30px;
+  font-size: 14pt;
+}
+
+/* section kep-your-inventory */
+.kep-your-inventory {
+  display: flex;
+  border-top: 1px solid #8b635936;
+  height: 800px;
+  background-color: #f4f0ed;
+  padding-top: 250px;
+}
+.kep-your-inventory-image img {
+  position: relative;
+  right: 20px;
+  width: 700px;
+}
+.kep-your-inventory-text {
+  align-self: center;
+}
+.kep-your-inventory-text h2 {
+  color: #342f36;
+  font-size: 23pt;
+  margin-bottom: 20px;
+}
+.kep-your-inventory-text p {
+  font-size: 14pt;
+  line-height: 25px;
+  width: 70vmin;
+  color: rgba(0, 0, 0, 0.541);
+}
+
+/* section our-growing */
+.our-growing {
+  height: 610px;
+  border-top: 1px solid rgba(145, 115, 59, 0.178);
+}
+.our-growing>h2 {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  color: #342f36;
+  font-size: 25pt;
+  text-align: center;
+}
+.our-growing-channels {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-column-gap: 30px;
+  grid-template-rows: 250px;
+  justify-content: center;;
+}
+.our-growing-channels>div {
+  text-align: center;
+  background-color: #fcf8f7;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px -15px rgba(0, 0, 0, 0.363);
+}
+.our-growing-channels>div h2 { 
+  font-size: 15pt;
+  margin-bottom: 20px;
+  color: #342f36;
+}
+.our-growing-channels>div p {
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.568);
+}
+.our-growing-channels>div a {
+  text-decoration: none;
+  color: hsl(179deg 75% 38%);
+}
+.quadrado-logo-channel-1,
+.quadrado-logo-channel-2,
+.quadrado-logo-channel-3 {
+  position: relative;
+  bottom: 35px;
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+/* cores do quadrado logo */
+.quadrado-logo-channel-1 {
+  background: rgb(250 137 132);
+}
+.quadrado-logo-channel-2 {
+  background: rgb(190 224 236);
+}
+.quadrado-logo-channel-3 {
+  background: rgb(129 220 191);
+}
+
+/* Section get-your-invitation */
+.get-your-invitation {
+  background-image: url('/assets/imagem-get-your-invitation.jpg');
+  background-position: 0px -40px;
+  height: 350px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.281);
+}
+.get-your-invitation-texto-email {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: rgb(245 240 237);
+  position: relative;
+  top: 25%;
+  width: 1100px;
+  height: 200px;
+  margin: 0 auto;
+  padding-left: 100px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 2px rgba(32, 32, 32, 0.226);
+}
+.get-your-invitation-texto h2{
+  font-family: 'castoro';
+  font-size: 22pt;
+  color: hsl(304deg 13% 22%);
+  margin-bottom: 10px;
+}
+.get-your-invitation-texto p {
+  font-size: 13pt;
+  color: rgba(75, 73, 73, 0.76);
+  width: 23vmax;
+  line-height: 25px;
+}
+
+.get-your-invitation-email {
+  display: flex;
+  flex-direction: column;
+}
+.get-your-invitation-email>form input[type=text]{
+  margin-right: 10px;
+  width: 380px;
+  height: 50px;
+  text-indent: 20px;
+  font-size: 20px;
+  border: 1px solid rgba(110, 107, 107, 0.589);
+  border-radius: 5px;
+}
+.get-your-invitation-email>form input[type=text]::placeholder {
+  font-size: 12pt;
+  color: rgba(110, 107, 107, 0.589);
+}
+
+.get-your-invitation-email>form input[type=submit]{
+  width: 180px;
+  height: 50px;
+  background-color: var(--background-button);
+  color: #ece8e5;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.get-your-invitation-email>p {
+  position: relative;
+  right: 20px;
+  align-self: flex-end;
+  font-size: 9pt;
+  margin-top: 20px;
+}
+.get-your-invitation-email p a {
+  text-decoration: none;
+  color: hsl(179deg 75% 38%);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  gap: 90px;
+  background-image: url('/assets/footer-background.jpg');
+  background-repeat: no-repeat;
+  height: 400px;
+  padding: 160px 0px;
+}
+.logo-direitos {
+  margin-left: 80px;
+}
+.logo-footer,
+.logo-footer a,
+.logo-footer a p {
+  position: relative;
+  font-family: 'Castoro';
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #342f36;
+  margin-bottom: 20px;
+}
+.logo-direitos p {
+  margin: 15px 0;
+}
+
+
+.menu-footer {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-gap: 20px 20px;
+}
+.menu-footer div h2 {
+  font-size: 12pt;
+  color: rgb(195 148 76);
+  margin-bottom: 15px;
+}
+.menu-footer ul,
+.menu-footer li,
+.menu-footer a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  line-height: 35px;
+}
