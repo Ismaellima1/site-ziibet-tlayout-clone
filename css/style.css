@@ -1,5 +1,5 @@
 /* Importações */
-@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap");
 /* 
 font-family: 'Castoro', serif;
 font-family: 'Roboto', sans-serif;
@@ -7,7 +7,9 @@ font-family: 'Roboto', sans-serif;
 
 /* Reset css */
 * {
-  padding: 0px;margin: 0px;box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 /* Pseudo raiz do documento HTML */
@@ -57,7 +59,7 @@ header {
 .logo a p {
   position: relative;
   left: 3px;
-  font-family: 'Castoro';
+  font-family: "Castoro";
   font-size: 25px;
   text-decoration: none;
   font-weight: bold;
@@ -69,7 +71,7 @@ header {
 .menu nav,
 .menu ul,
 .menu li,
-.menu a{
+.menu a {
   display: flex;
   gap: 50px;
   font-weight: 500;
@@ -90,7 +92,8 @@ header {
 .login img {
   width: 25px;
 }
-.login p,.login a {
+.login p,
+.login a {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -131,7 +134,7 @@ main {
 .texto-cap-email h1 {
   font-family: var(--font-title-family);
   font-size: 30pt;
-  color:rgba(0, 0, 0, 0.856);
+  color: rgba(0, 0, 0, 0.856);
   line-height: 50px;
   margin-bottom: 15px;
 }
@@ -148,7 +151,7 @@ main {
   gap: 10px;
   margin-bottom: 20px;
 }
-.texto-cap-email-form input[type=text]{
+.texto-cap-email-form input[type="text"] {
   width: 300px;
   height: 50px;
   text-indent: 20px;
@@ -156,10 +159,10 @@ main {
   border-radius: 5px;
   border: 1px solid rgba(124, 124, 124, 0.527);
 }
-.texto-cap-email-form input[type=text]::placeholder {
+.texto-cap-email-form input[type="text"]::placeholder {
   color: rgba(124, 124, 124, 0.603);
 }
-.texto-cap-email-form input[type=submit]{
+.texto-cap-email-form input[type="submit"] {
   width: 190px;
   height: 50px;
   background-color: var(--background-button);
@@ -179,7 +182,7 @@ main {
   color: hsl(179deg 75% 38%);
 }
 /* cap-email imagem */
-.cap-email-image img{
+.cap-email-image img {
   position: relative;
   bottom: 70px;
   width: 600px;
@@ -250,7 +253,7 @@ main {
   height: 610px;
   border-top: 1px solid rgba(145, 115, 59, 0.178);
 }
-.our-growing>h2 {
+.our-growing > h2 {
   margin-top: 70px;
   margin-bottom: 100px;
   color: #342f36;
@@ -262,26 +265,26 @@ main {
   grid-template-columns: 350px 350px 350px;
   grid-column-gap: 30px;
   grid-template-rows: 250px;
-  justify-content: center;;
+  justify-content: center;
 }
-.our-growing-channels>div {
+.our-growing-channels > div {
   text-align: center;
   background-color: #fcf8f7;
   border-radius: 10px;
   box-shadow: 0px 0px 40px -15px rgba(0, 0, 0, 0.363);
 }
-.our-growing-channels>div h2 { 
+.our-growing-channels > div h2 {
   font-size: 15pt;
   margin-bottom: 20px;
   color: #342f36;
 }
-.our-growing-channels>div p {
+.our-growing-channels > div p {
   font-weight: 500;
   line-height: 25px;
   margin-bottom: 30px;
   color: rgba(0, 0, 0, 0.568);
 }
-.our-growing-channels>div a {
+.our-growing-channels > div a {
   text-decoration: none;
   color: hsl(179deg 75% 38%);
 }
@@ -308,7 +311,7 @@ main {
 
 /* Section get-your-invitation */
 .get-your-invitation {
-  background-image: url('/assets/imagem-get-your-invitation.jpg');
+  background-image: url("../assets/imagem-get-your-invitation.jpg");
   background-position: 0px -40px;
   height: 350px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.281);
@@ -327,8 +330,8 @@ main {
   border-radius: 5px;
   box-shadow: 0px 0px 20px 2px rgba(32, 32, 32, 0.226);
 }
-.get-your-invitation-texto h2{
-  font-family: 'castoro';
+.get-your-invitation-texto h2 {
+  font-family: "castoro";
   font-size: 22pt;
   color: hsl(304deg 13% 22%);
   margin-bottom: 10px;
@@ -344,7 +347,7 @@ main {
   display: flex;
   flex-direction: column;
 }
-.get-your-invitation-email>form input[type=text]{
+.get-your-invitation-email > form input[type="text"] {
   margin-right: 10px;
   width: 380px;
   height: 50px;
@@ -353,12 +356,12 @@ main {
   border: 1px solid rgba(110, 107, 107, 0.589);
   border-radius: 5px;
 }
-.get-your-invitation-email>form input[type=text]::placeholder {
+.get-your-invitation-email > form input[type="text"]::placeholder {
   font-size: 12pt;
   color: rgba(110, 107, 107, 0.589);
 }
 
-.get-your-invitation-email>form input[type=submit]{
+.get-your-invitation-email > form input[type="submit"] {
   width: 180px;
   height: 50px;
   background-color: var(--background-button);
@@ -369,7 +372,7 @@ main {
   font-weight: 500;
   cursor: pointer;
 }
-.get-your-invitation-email>p {
+.get-your-invitation-email > p {
   position: relative;
   right: 20px;
   align-self: flex-end;
@@ -386,7 +389,7 @@ footer {
   display: flex;
   justify-content: space-around;
   gap: 90px;
-  background-image: url('/assets/footer-background.jpg');
+  background-image: url("../assets/footer-background.jpg");
   background-repeat: no-repeat;
   height: 400px;
   padding: 160px 0px;
@@ -398,7 +401,7 @@ footer {
 .logo-footer a,
 .logo-footer a p {
   position: relative;
-  font-family: 'Castoro';
+  font-family: "Castoro";
   font-size: 25px;
   text-decoration: none;
   font-weight: bold;
@@ -408,7 +411,6 @@ footer {
 .logo-direitos p {
   margin: 15px 0;
 }
-
 
 .menu-footer {
   display: grid;
