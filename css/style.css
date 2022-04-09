@@ -28,27 +28,26 @@ body {
 
 /* Saiba-mais */
 .its-here {
-  display: flex;
-  justify-content: flex-start;
   padding: 10px;
-  padding-left: 110px;
   color: rgb(136, 135, 135);
   border-top: 4px solid hsl(179deg 75% 38%);
   border-bottom: 1px solid rgba(0, 0, 0, 0.068);
+  font-size: 13px;
+}
+.its-here p {
+  
 }
 .its-here a {
   text-decoration: none;
   color: hsl(179deg 75% 38%);
   font-weight: 500;
-  font-size: 14px;
 }
 
 /* header do site */
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 0 100px;
+  justify-content: space-around;
   padding: 10px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.048);
 }
@@ -120,10 +119,11 @@ main {
 /* Section cap-email */
 .cap-email {
   height: 500px;
+  width: 1000px;
   position: relative;
   top: 110px;
   display: flex;
-  margin-left: 110px;
+  margin: 0 auto;
 }
 /* texto cap email */
 .texto-cap-email {
@@ -154,7 +154,7 @@ main {
 .texto-cap-email-form input[type="text"] {
   width: 300px;
   height: 50px;
-  text-indent: 20px;
+  padding: 0px 20px;
   font-size: 17px;
   border-radius: 5px;
   border: 1px solid rgba(124, 124, 124, 0.527);
@@ -223,17 +223,23 @@ main {
 /* section kep-your-inventory */
 .kep-your-inventory {
   display: flex;
+  gap: 100px;
+  align-items: center;
   border-top: 1px solid #8b635936;
   height: 800px;
+  width: 1000px;
   background-color: #f4f0ed;
   padding-top: 250px;
+  margin: 0 auto;
 }
 .kep-your-inventory-image img {
-  position: relative;
-  right: 20px;
-  width: 700px;
+  width: 497px;
+}
+.kep-your-inventory-image {
+  margin: 0 auto;
 }
 .kep-your-inventory-text {
+  margin: 0 auto;
   align-self: center;
 }
 .kep-your-inventory-text h2 {
@@ -322,7 +328,7 @@ main {
   gap: 40px;
   background-color: rgb(245 240 237);
   position: relative;
-  top: 25%;
+  top: 78px;
   width: 1100px;
   height: 200px;
   margin: 0 auto;
@@ -339,7 +345,7 @@ main {
 .get-your-invitation-texto p {
   font-size: 13pt;
   color: rgba(75, 73, 73, 0.76);
-  width: 23vmax;
+  width: 292px;
   line-height: 25px;
 }
 
@@ -351,7 +357,7 @@ main {
   margin-right: 10px;
   width: 380px;
   height: 50px;
-  text-indent: 20px;
+  padding: 0px 20px;
   font-size: 20px;
   border: 1px solid rgba(110, 107, 107, 0.589);
   border-radius: 5px;
@@ -395,7 +401,11 @@ footer {
   padding: 160px 0px;
 }
 .logo-direitos {
-  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.logo-direitos p {
+  line-height: 31px;
 }
 .logo-footer,
 .logo-footer a,
@@ -408,13 +418,10 @@ footer {
   color: #342f36;
   margin-bottom: 20px;
 }
-.logo-direitos p {
-  margin: 15px 0;
-}
 
 .menu-footer {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px 200px 200px;
   grid-gap: 20px 20px;
 }
 .menu-footer div h2 {
