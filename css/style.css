@@ -21,6 +21,14 @@ font-family: 'Roboto', sans-serif;
 
 /* Elemento corpo do site */
 body {
+  display: grid;
+  grid-template-rows: 45px;
+  grid-template-areas:
+  "alert alert alert"
+  "header header header"
+  "main main main"
+  "footer footer footer";
+
   background-color: #f5f0ed;
   font-family: var(--font-princ-family);
   overflow-x: hidden;
@@ -28,11 +36,16 @@ body {
 
 /* Saiba-mais */
 .its-here {
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 34.7em;
   color: rgb(136, 135, 135);
   border-top: 4px solid hsl(179deg 75% 38%);
   border-bottom: 1px solid rgba(0, 0, 0, 0.068);
   font-size: 13px;
+  grid-area: alert;
 }
 .its-here p {
   
@@ -50,6 +63,7 @@ header {
   justify-content: space-around;
   padding: 10px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.048);
+  grid-area: header;
 }
 
 /* logo do header */
@@ -114,16 +128,14 @@ main {
   display: flex;
   flex-direction: column;
   height: 2500px;
+  grid-area: main;
 }
 
 /* Section cap-email */
 .cap-email {
-  height: 500px;
-  width: 1000px;
-  position: relative;
-  top: 110px;
   display: flex;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 /* texto cap email */
 .texto-cap-email {
@@ -183,8 +195,6 @@ main {
 }
 /* cap-email imagem */
 .cap-email-image img {
-  position: relative;
-  bottom: 70px;
   width: 600px;
 }
 
@@ -399,6 +409,7 @@ footer {
   background-repeat: no-repeat;
   height: 400px;
   padding: 160px 0px;
+  grid-area: footer;
 }
 .logo-direitos {
   display: flex;
